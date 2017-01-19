@@ -21,7 +21,7 @@ class CViewTree : public CTreeCtrl
 public:
 	CViewTree();
 	afx_msg void OnClick(NMHDR* pNMHDR, LRESULT* pResult);
-	afx_msg void OnLButtonDblClk(NMHDR* pNMHDR, LRESULT* pResult);
+	afx_msg void OnDblClk(NMHDR* pNMHDR, LRESULT* pResult);
 // ÖØÐ´
 protected:
 	virtual BOOL OnNotify(WPARAM wParam, LPARAM lParam, LRESULT* pResult);

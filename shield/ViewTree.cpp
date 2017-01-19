@@ -23,7 +23,7 @@ CViewTree::~CViewTree()
 
 BEGIN_MESSAGE_MAP(CViewTree, CTreeCtrl)
 	ON_NOTIFY_REFLECT(NM_CLICK, OnClick)
-	ON_NOTIFY_REFLECT(NM_DBLCLK, OnLButtonDblClk)
+	ON_NOTIFY_REFLECT(NM_DBLCLK, OnDblClk)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
@@ -43,7 +43,7 @@ BOOL CViewTree::OnNotify(WPARAM wParam, LPARAM lParam, LRESULT* pResult)
 
 	return bRes;
 }
-void CViewTree::OnLButtonDblClk(NMHDR* pNMHDR, LRESULT* pResult)
+void CViewTree::OnDblClk(NMHDR* pNMHDR, LRESULT* pResult)
 {
 	if (pNMHDR && pNMHDR->code == NM_DBLCLK)
 	{
