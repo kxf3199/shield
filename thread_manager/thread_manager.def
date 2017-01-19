@@ -1,0 +1,4 @@
+LIBRARY 
+EXPORTS
+CreateInterface  @1
+ReleaseInterface @2
