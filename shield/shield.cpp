@@ -115,7 +115,7 @@ BOOL CshieldApp::InitInstance()
 	INT_PTR nResponse = dlg.DoModal();
 	if (IDCANCEL==nResponse)
 	{
-		//return FALSE;
+		return FALSE;
 	}
 
 	// 注册应用程序的文档模板。  文档模板
